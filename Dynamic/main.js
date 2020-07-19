@@ -19,26 +19,7 @@
    achievements(data.achievements);
    console.log(data);
  });
-/*function loadjson(file){
-  return new Promise((resolve,reject)=>{
-    return fetch(file).then(response=>{
-      if(response.ok){
-        resolve(response.json());
-      }else{
-        reject(new error('error'));
-      }
-    })
-  })
-}
-var newfile = loadjson("data.json");
-newfile.then(data=>{
-  details(data.basics);
-  career(data.Careerobjective);
-  education(data.education);
-  skills(data.skills);
-  achievements(data.achievements)
-  console.log(data);
-})*/
+
 var child = document.querySelector(".childone");
 function details(det){
   var img = document.createElement("img");

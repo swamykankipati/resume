@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body id="root">
+
+<h1 id="demo"></h1>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">ClickMe</button>
+
+<script type="text/javascript">
+	var car{
+		com:"Tata",
+		mode:"f2",
+		yer:"2020"
+	}
+	document.getElementById('i').innerHTML=car.mode;
+
+</script>
+
+<script>
+
+function myFunction3() {
+ a=10
+ b=20
+ document.write(a+b)	
+}
+var car = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "The car type is " + car.type;
+console.log(car.type)
+hi=document.getElementsByTagName('h1')
+hi.textContent=car.type;
+for ( i in car) {
+	document.write(car[i])
+	
+}
+// Create an object:
+
+k=document.getElementById('root');
+document.write(screen.width)
+document.write(screen.height)
+document.write(window.location.href)
+ h=document.createElement('h1');
+ h.classList.add('Hello')
+ h.setAttribute("style","color:red")
+ h.textContent=car.type;
+k.appendChild(h); 
+k.removeChild(h)
+
+function myFunction1() {
+  var btn = document.createElement("BUTTON");
+  btn.innerHTML = "CLICK ME";
+  document.body.appendChild(btn);
+}
+
+function myFunction() {
+  // var textnode = document.createTextNode("Water");
+  var textnode=document.createTextNode("Hello")
+  var item = document.getElementById("myList").childNodes[0];
+  item.replaceChild(textnode, item.childNodes[0]);
+}
+
+
+</script>
+<ul id="myList"><li>Coffee</li><li>Tea</li><li>Milk</li></ul>
+<button onclick="myFunction3()">Basic</button>
+<button onclick="myFunction()">Change</button>
+<button onclick="myFunction1()">Button</button>
+
+</body>
+</html>
+
+
+
